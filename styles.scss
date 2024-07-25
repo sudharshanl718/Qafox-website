@@ -1,0 +1,569 @@
+/*
+  This file will be the top-most entry point for all styles in the app.
+  Any dependant styles should be explicitly imported here.
+
+  Import files from the `node_modules` folder by prepending them with "~".
+  To import CSS files from `node_modules`, make sure to include the file extension.
+*/
+
+// https://github.com/qodesmith/sassyons
+@import 'sassyons/dist/sassyons.css';
+
+/*
+  Application Styles
+  ------------------
+
+  All our application-specific styles will go below.
+  @import each of them in reverse-priority order (bottom = highest priority).
+*/
+@import 'global';
+
+* {
+  text-decoration: none;
+  list-style: none;
+}
+
+.hd1 {
+  height: 43px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgb(220, 218, 218);
+}
+
+.hd1-1 button {
+  margin-left: 200px;
+  background-color: rgb(220, 218, 218);
+  border: 1px solid rgb(220, 218, 218);
+  width: 95px;
+  font-size: 12px;
+  padding: 5px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+b {
+  font-size: 14px;
+}
+
+.hd1-1 button:hover {
+  opacity: 1;
+}
+
+#dd1 a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 10px 15px;
+  font-size: 12px;
+  width: 150px;
+}
+
+#dd1 a:hover {
+  background-color: #23A1D1;
+  color: white;
+}
+
+#dd1 {
+  position: absolute;
+  margin-left: 200px;
+  margin-top: 5px;
+  display: none;
+  box-shadow: 2px 2px 5px;
+  background-color: white;
+}
+
+.hd1-2 {
+  font-size: 12px;
+  margin-left: 550px;
+  text-align: center;
+  justify-content: center;
+  opacity: 0.6;
+}
+
+.hd1-2:hover {
+  opacity: 1;
+}
+
+.hd1-2 b {
+  font-size: 16px;
+}
+
+.hd1-3 button {
+  background-color: rgb(220, 218, 218);
+  border: 1px solid rgb(220, 218, 218);
+  width: 120px;
+  font-size: 12px;
+  padding: 5px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.hd1-3 button:hover {
+  opacity: 1;
+}
+
+#dd2 a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  background-color: white;
+  padding: 10px 15px;
+  font-size: 12px;
+  width: 150px;
+}
+
+#dd2 a:hover {
+  background-color: #23A1D1;
+  color: white;
+}
+
+#dd2 {
+  position: absolute;
+  margin-top: 5px;
+  display: none;
+  box-shadow: 2px 2px 5px;
+  background-color: white;
+  opacity: 1;
+  z-index: 1;
+}
+
+.hd1-4 {
+  font-size: 12px;
+  text-align: center;
+  justify-content: center;
+  opacity: 0.6;
+}
+
+.hd1-4:hover {
+  opacity: 1;
+}
+
+.hd1-4 b {
+  font-size: 16px;
+}
+
+.hd1-5 {
+  font-size: 12px;
+  text-align: center;
+  justify-content: center;
+  opacity: 0.6;
+  margin-left: 15px;
+}
+
+.hd1-5:hover {
+  opacity: 1;
+}
+
+.hd1-5 b {
+  font-size: 16px;
+}
+
+.hd1-6 {
+  font-size: 12px;
+  text-align: center;
+  justify-content: center;
+  opacity: 0.6;
+  margin-left: 15px;
+}
+
+.hd1-6:hover {
+  opacity: 1;
+}
+
+.hd1-6 b {
+  font-size: 16px;
+}
+
+
+.hd2 {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+.hd2-1 {
+  font-size: 35px;
+  margin-left: 200px;
+  margin-top: 45px;
+}
+
+.hd2-1 a {
+  color: #23A1D1;
+}
+
+.hd2-2 {
+  display: flex;
+}
+
+.hd2-2 input {
+  height: 40px;
+  width: 380px;
+  border: 1px solid black;
+  border-radius: 5px 0 0 5px;
+  opacity: 0.6;
+  margin-left: 200px;
+  padding: 5px 15px;
+  position: relative;
+}
+
+.hd2-2 div {
+  height: 40px;
+  width: 84px;
+  border: 1px solid black;
+  background-color: rgb(220, 218, 218);
+  border-radius: 0 5px 5px 0;
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.hd2-2 ion-icon {
+  margin: 10px 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.hd2-2 input:hover {
+  opacity: 1;
+}
+
+.hd2-2 div:hover {
+  opacity: 1;
+}
+
+.hd2-3 button {
+  background-color: black;
+  width: 250px;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0.8;
+  cursor: pointer;
+  margin-left: 40px;
+}
+
+.hd2-3 button:hover {
+  opacity: 1;
+}
+
+.hd3 {
+  background-color: #23A1D1;
+  height: 40px;
+  width: 73.5%;
+  margin-left: 200px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.ul1 {
+  margin-left: -40px;
+  display: flex;
+}
+
+.ul1 li {
+  position: relative;
+  margin-left: 15px;
+  cursor: pointer;
+  height: 40px;
+  padding: 10px;
+  color: white;
+}
+
+.ul1 ul {
+  position: absolute;
+}
+
+.ul1 li:hover {
+  background-color: #00b7ff;
+}
+
+.ul2 {
+  background-color: white;
+  margin-left: -10px;
+  margin-top: 15px;
+  box-shadow: 2px 2px 5px;
+  z-index: 1;
+}
+
+.ul1 li:nth-child(1):hover .ul2 li {
+  display: block;
+}
+
+.ul2 li {
+  margin-left: -40px;
+  width: 200px;
+  display: none;
+  color: black;
+}
+
+.ul2 li:hover {
+  background-color: #23A1D1;
+  color: white;
+}
+
+.ul3 {
+  background-color: white;
+  margin-left: -10px;
+  margin-top: 15px;
+  box-shadow: 2px 2px 5px;
+  z-index: 1;
+}
+
+.ul1 li:nth-child(2):hover .ul3 li {
+  display: block;
+}
+
+.ul3 li {
+  margin-left: -40px;
+  width: 200px;
+  display: none;
+  color: black;
+}
+
+.ul3 li:hover {
+  background-color: #23A1D1;
+  color: white;
+}
+
+.ul4 {
+  background-color: white;
+  margin-left: -10px;
+  margin-top: 15px;
+  box-shadow: 2px 2px 5px;
+  z-index: 1;
+}
+
+.ul1 li:nth-child(3):hover .ul4 li {
+  display: block;
+}
+
+.ul4 li {
+  margin-left: -40px;
+  width: 200px;
+  color: black;
+  display: none;
+}
+
+.ul4 li:hover {
+  background-color: #23A1D1;
+  color: white;
+}
+
+.hd3-1 {
+  background-color: white;
+  display: none;
+}
+
+.ul1 li:nth-child(8):hover .hd3-1 {
+  display: block;
+}
+
+.ul5 {
+  margin-left: -10px;
+  margin-top: -194px;
+  background-color: white;
+  z-index: 1;
+}
+
+.ul5 li {
+  margin-left: -40px;
+  width: 100px;
+  color: black;
+}
+
+.ul5 li:hover {
+  background-color: #23A1D1;
+  color: white;
+}
+
+.ul6 {
+  background-color: white;
+  margin-left: 90px;
+  margin-top: -194px;
+  z-index: 1;
+}
+.ul6 li {
+  margin-left: -40px;
+  width: 100px;
+  color: black;
+}
+
+.ul6 li:hover {
+  background-color: #23A1D1;
+  color: white;
+}
+
+
+.ul7 {
+  background-color: white;
+  margin-left: 190px;
+  margin-top: -194px;
+  z-index: 1;
+}
+
+.ul7 li {
+  margin-left: -40px;
+  width: 100px;
+  color: black;
+}
+
+.ul7 li:hover {
+  background-color: #23A1D1;
+  color: white;
+}
+
+.ul8 {
+  background-color: white;
+  margin-left: 290px;
+  margin-top: -194px;
+  z-index: 1;
+}
+
+.ul8 li {
+  margin-left: -40px;
+  width: 100px;
+  color: black;
+}
+
+.ul8 li:hover {
+  background-color: #23A1D1;
+  color: white;
+}
+
+.hd3-1 p {
+  width: 393px;
+  background-color: white;
+  margin-top: 210px;
+  margin-left: -10px;
+  color: black;
+  padding: 10px;
+}
+
+.hd3-1 p:hover {
+  background-color: #23A1D1;
+  color: white;
+}
+
+
+
+
+.main {
+  margin-left: 200px;
+  width: 73.5%;
+}
+
+.main h2 {
+  font-weight: lighter;
+  opacity: 0.7;
+}
+
+.md1 {
+  margin-top: 10px;
+  border: black 0.1px solid;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#md1-1 {
+  background: url("https://tutorialsninja.com/demo/image/cache/catalog/demo/banners/iPhone6-1140x380.jpg");
+  height: 380px;
+}
+
+.left {
+  padding: 10px;
+  font-size: 40px;
+  background-color: transparent;
+  border: white;
+  margin-top: 165px;
+}
+
+.right {
+  padding: 10px;
+  font-size: 40px;
+  background-color: transparent;
+  border: white;
+  margin-left: 970px;
+  position: absolute;
+  margin-top: 165px;
+}
+
+.md2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.md2-1 {
+  width: 22%;
+  box-shadow: 2px 2px 5px;
+  padding: 10px;
+  font-size: 12px;
+}
+
+.md2-1 h3 {
+  color: blue;
+}
+
+.md2-1-1 {
+  display: flex;
+  background-color: rgb(220, 218, 218);
+  width: 245px;
+  margin-left: -10px;
+  margin-bottom: -10px;
+}
+
+.md2-1-1 p {
+  padding: 10px 10px;
+  margin: 0;
+  opacity: 0.6;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.md2-1-1 p:hover {
+  background-color: gray;
+  opacity: 1;
+}
+
+.md2-1-1 p {
+  margin-left: 15px;
+}
+
+
+
+
+.footer {
+  background-color: #303030;
+  color: white;
+  font-size: 12px;
+  height: 430px;
+  margin-top: 30px;
+}
+
+.fd1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 150px;
+}
+
+.footer ul {
+  width: 20%;
+  justify-content: space-evenly;
+}
+.footer li {
+  padding: 3px;
+  opacity: 0.6;
+}
+
+.footer li:hover {
+  opacity: 1;
+}
+
+.footer h4 {
+  font-size: 14px;
+}
+
+.fd2 {
+  margin-left: 190px;
+  width: 73.5%;
+}
